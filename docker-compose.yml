@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    image: akhmet-anuar-devops:1.0
+    container_name: anuar-compose
+    ports:
+      - "8082:8080"
+    environment:
+      STUDENT_NAME: "Anuar Akhmet"
+    restart: unless-stopped
